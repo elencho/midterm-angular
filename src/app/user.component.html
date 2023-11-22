@@ -1,0 +1,14 @@
+<div>
+  <h1>{{ message }}</h1>
+  <div *ngFor="let user of users">
+    {{ user.firstName }} {{ user.lastName }} - {{ user.email }}
+  </div>
+
+  <h1>{{ messageFromChild }}</h1>
+  <div *ngFor="let user of users_3">
+    {{ user.firstName }} {{ user.lastName }} - {{ user.email }}
+  </div>
+  <button class="btn btn-success" (click)="displayUsers()">
+    Display Users using Service
+  </button>
+</div>
